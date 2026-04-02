@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+#main{
+    width: 100%;
+    
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 40px;
+    color: white;
+    position: fixed;
+    margin-top: -86px;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.heading {
+    margin-top: 90px;
+}
+.heading h1{
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 0.9;
+    opacity: 0.6;
+    margin-left: 30px;
+}
+
+#second-h1{
+    margin-left: 220px;
+}
+
+.blocktext{
+    width: fit-content;
+}
+.blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size:10px;
+}
+
+.littleHeading{
+    margin-top: 100px;
+    padding-right: 40px;
+
+}
+
+.littleHeading h5{
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+
+}
+
+.herofoter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    padding: 0 2vw;
+}
+
+.herofoter a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.circleContainer{
+    display: flex;
+    gap: 5px;
+}
+.circle{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondPage{
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.secondPage .elem{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.elem h1{
+    font-size: 50px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+.elem img{
+    height: 100px;
+   max-width: 200px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    mix-blend-mode: difference;
+}
+

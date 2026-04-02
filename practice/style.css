@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.secondPage{
+    color: white;
+    background: #000;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 40px 2px;
+    
+}
+
+.secondPage .div{
+    border-bottom: 1px solid gray;
+    padding:  5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.div h1{
+    font-size: 50px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+.div img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+}
