@@ -3,15 +3,39 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
-function circleMouse(){
-  window.addEventListener('mousemove', function(dets){
-    this.document.querySelector('.minicircle').style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`
-  })
+
+var timeout ;
+
+function mouseScale(){
+  var xscale = 1;
+  var yscale = 1;
+
+  var xprev = 0;
+  var yprev = 0;
+
+ window.addEventListener("mousemove", function(dets){
+  this.clearTimeout(timeout)
+  xscale =  gsap.utils.clamp(0.8, 1.2, dets.clientX - xprev)
+  yscale =  gsap.utils.clamp(0.8, 1.2, dets.clientY - yprev)
+
+  xprev = dets.clientX;
+  yprev = dets.clientY;
+  
+
+  circleMouse(xscale, yscale)
+  
+  setTimeout(() => {
+        document.querySelector('.minicircle').style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`
+  }, 100);
+ })
+
 }
 
-circleMouse()
-
-
+function circleMouse(xscale, yscale){
+  window.addEventListener('mousemove', function(dets){
+    document.querySelector('.minicircle').style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${xscale}, ${yscale})`
+  })
+}
 
 function firstPageAnim() {
   var tl = gsap.timeline();
@@ -37,5 +61,8 @@ function firstPageAnim() {
       ease: Expo.easeInOut,
     });
 }
+
+mouseScale()
+circleMouse()
 
 firstPageAnim()
