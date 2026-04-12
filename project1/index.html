@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Doc</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="loco.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -11,12 +11,12 @@
 </head>
 <body>
     <div class="minicircle"> </div>
-    <div id="main">
+    <div id="main" data-scroll-container>
         <div class="nav">
                 <a href="/">Cynthia Ughu  </a>
                 <h4>MAIN+ </h4>
             </div>
-        <div id="hero">
+        <div id="hero" data-scroll-section>
             
 
             <div class="heading">
@@ -64,53 +64,57 @@
 
         </div>
 
-        <div class="secondPage">
+        <div class="secondPage" data-scroll-section>
             <div class="elem"> 
                 <h1>The plug</h1> 
                 <img src="https://images.unsplash.com/photo-1761839257870-06874bda71b5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMzF8fHxlbnwwfHx8fHw%3D" alt="">
+                <h5>2022</h5>
+
             </div>
 
             <div class="elem">
                 <h1>experience</h1>
                 <img src="https://images.unsplash.com/photo-1761839259494-71caddcdd6b3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h5>2022</h5>
             </div>
 
-            <div class="elem">
+            <div class="elem elemlast">
                 <h1>dodo</h1>
                 <img src="https://images.unsplash.com/photo-1773332585815-f106a5d6ed6c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMTB8fHxlbnwwfHx8fHw%3D" alt="">
+                <h5>2022</h5>
             </div>
             
         </div>
 
-        <div class="aboutSection">
 
-          <div class="about">
+
+       <div class="about" data-scroll-section>
              <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 
-             <div class="imgText">
+              <div class="imgText">
                  <h4>(About me)</h4>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione qui aut quos corrupti laboriosam minus saepe delectus eveniet dolores aspernatur ipsa consequatur explicabo excepturi a maxime praesentium quis deserunt at veritatis, voluptatum id repellendus facere voluptate! Sapiente, nesciunt qui.</p>
-                 <button>Let's Talk</button>
+                 <a href="#"> Let's Talk</a>
               </div>
-              <div class="extraAbout">
-            <h5>(forget to mention)</h5>
-            <button>Subscribe to my youtube channel <i class="ri-arrow-right-up-line"></i></button>
+       </div>
+
+       <div class="extraAbout" data-scroll-section>
+           <h5>(forget to mention)</h5>
+            <h3>Subscribe to my youtube channel <i class="ri-arrow-right-up-line"></i></h3>
         </div>
-           </div>
-        </div>
+
+
          
         <div class="footer">
             <div class="footerleft"> 
 
-            <li>abc</li>
-            <li>cdsc</li>
-            <li>dsac</li>
-        
+              <h5>2023 &copy;</h5> 
+              <h5> 0: 05 AM EST</h5>      
+
            </div>
             
             <div class="footerright">
-                 <li>agfa</li>
-                <li>adfa</li>
+               <a href="#">Linkedin</a> <a href="#">instagram</a> <a href="#">facebook</a> <a href="#">dribble</a>
             </div>
 
         </div>
@@ -120,7 +124,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
         integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="script.js"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+   
+        <script src="script.js"></script>
 </body> 
 </html>
