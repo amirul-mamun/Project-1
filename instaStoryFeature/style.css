@@ -61,3 +61,8 @@ html , body{
     position: absolute;  
     display: none;
 }
+h2{
+    padding: 15vw 0;
+    text-align: center;
+   color: lightseagreen;
+}
